@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: nim-relay
+    runtime: node
+    plan: free
+    branch: main
+    buildCommand: ""
+    startCommand: node server.js
+    healthCheckPath: /healthz
